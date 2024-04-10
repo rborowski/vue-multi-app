@@ -1,0 +1,24 @@
+{
+  "name": "vue-multi",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:personal": "vite --config vite.config.personal.js",
+    "dev:professional": "vite --config vite.config.professional.js",
+    "build:personal": "vite build --config vite.config.personal.js",
+    "build:professional": "vite build --config vite.config.professional.js",
+    "build": "npm run build:personal && npm run build:professional",
+    "preview:personal": "vite preview --config vite.config.personal.js",
+    "preview:professional": "vite preview --config vite.config.professional.js"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.6"
+  }
+}
