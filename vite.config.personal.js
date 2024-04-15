@@ -11,7 +11,10 @@ export default defineConfig({
     outDir: '../../../dist/personal', // Target catalog for build
     emptyOutDir: true,
     rollupOptions: {
-      input: {personal: "./src/applications/personal/index.html"},
+      input: {
+        personal: "./src/applications/personal/index.html",
+        login: "./src/applications/personal/login/index.html"
+      },
       output: { // here define naming pattern and directories for assets
         chunkFileNames: 'assets/js/[name]-[hash].js', 
         entryFileNames: 'assets/js/[name]-[hash].js',
